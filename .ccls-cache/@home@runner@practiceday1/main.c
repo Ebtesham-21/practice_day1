@@ -34,15 +34,37 @@ int bejor() {
   }
 }
 
+int shopping() {
+  int taka;
+  printf("Enter ammount: ");
+  scanf("%d", &taka);
+  if (taka >= 10000)
+  {
+    printf("Gucci Bag");
+  }
+  else if ( taka >= 5000)
+  {
+    printf("Levis Bag");
+  }
+  else if ( taka >= 10000 && taka > 20000)
+  {
+    printf("Gucci Bag \n Gucci Belt");
+  }
+  else 
+  {
+    printf("Something");
+  }
+}
+
 int zero() {
   int num;
   scanf("%d", &num);
   if (num > 0) {
-    printf("positive");
+    printf("positive\n");
   } else if (num < 0) {
-    printf("negetive");
+    printf("negetive\n");
   } else {
-    printf("zero");
+    printf("zero\n");
   }
 }
 
@@ -51,6 +73,7 @@ int main(void) {
   math();
   bejor();
   zero();
+  shopping();
 
   return 0;
 }
